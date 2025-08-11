@@ -5,8 +5,8 @@ from ultralytics import YOLO
 # Set QT platform to XCB for OpenCV compatibility with Sway
 os.environ["QT_QPA_PLATFORM"] = "xcb"
 
-# Expand the relative path to the video file
-video_path = os.path.expanduser("asset/video1.mp4")
+# Use the full, absolute path to the video file
+video_path = "/home/vedant/Project/asset/video1.mp4"
 
 # Initialize video capture
 video = cv2.VideoCapture(video_path)
